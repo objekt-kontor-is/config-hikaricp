@@ -1,4 +1,4 @@
-package de.objektkontor.config.tomcatjdbc;
+package de.objektkontor.config.hikaricp;
 
 import java.time.Duration;
 
@@ -61,6 +61,70 @@ public class HikariPoolConfig extends ObservableConfig {
 			+ "This property represents a user-defined name for the connection pool and appears mainly in logging and JMX management "
 			+ "consoles to identify pools and pool configurations.") private String poolName; // not set
 
+
+	public boolean isAutoCommit() {
+		return autoCommit;
+	}
+
+	public void setAutoCommit(boolean autoCommit) {
+		this.autoCommit = autoCommit;
+	}
+
+	public Duration getConnectionTimeout() {
+		return connectionTimeout;
+	}
+
+	public void setConnectionTimeout(Duration connectionTimeout) {
+		this.connectionTimeout = connectionTimeout;
+	}
+
+	public Duration getIdleTimeout() {
+		return idleTimeout;
+	}
+
+	public void setIdleTimeout(Duration idleTimeout) {
+		this.idleTimeout = idleTimeout;
+	}
+
+	public Duration getKeepaliveTime() {
+		return keepaliveTime;
+	}
+
+	public void setKeepaliveTime(Duration keepaliveTime) {
+		this.keepaliveTime = keepaliveTime;
+	}
+
+	public Duration getMaxLifetime() {
+		return maxLifetime;
+	}
+
+	public void setMaxLifetime(Duration maxLifetime) {
+		this.maxLifetime = maxLifetime;
+	}
+
+	public Integer getMinimumIdle() {
+		return minimumIdle;
+	}
+
+	public void setMinimumIdle(Integer minimumIdle) {
+		this.minimumIdle = minimumIdle;
+	}
+
+	public int getMaximumPoolSize() {
+		return maximumPoolSize;
+	}
+
+	public void setMaximumPoolSize(int maximumPoolSize) {
+		this.maximumPoolSize = maximumPoolSize;
+	}
+
+	public String getPoolName() {
+		return poolName;
+	}
+
+	public void setPoolName(String poolName) {
+		this.poolName = poolName;
+	}
 
 	/**
 	 * Configures specified data source instance

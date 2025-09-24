@@ -1,4 +1,4 @@
-package de.objektkontor.config.tomcatjdbc;
+package de.objektkontor.config.hikaricp;
 
 import com.zaxxer.hikari.HikariDataSource;
 

@@ -1,3 +1,3 @@
-# Configuration Framework extention for tomcat jdbc pool
-Provides configuration clases for tomcat jdbc pool
+# Configuration Framework extention for HikariCP jdbc pool
+Provides configuration clases for HikariCP jdbc pool
 
